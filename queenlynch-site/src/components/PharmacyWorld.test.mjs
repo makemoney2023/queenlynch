@@ -36,6 +36,18 @@ test('optimized media and scoped GSAP drive meaningful scroll motion', () => {
   assert.match(world, /scope: root/);
 });
 
+test('service rail converts vertical scroll to horizontal motion on mobile', () => {
+  assert.match(
+    world,
+    /media\.add\('\(prefers-reduced-motion: no-preference\)',[\s\S]*?const rail = document\.querySelector<HTMLElement>\('\.ql-care-rail'\)/,
+  );
+  assert.doesNotMatch(world, /media\.add\('\(min-width: 801px\)[\s\S]*?\.ql-care-rail/);
+  assert.match(
+    styles,
+    /@media \(max-width: 800px\)[\s\S]*?\.ql-care-rail\s*\{[\s\S]*?width:\s*max-content;[\s\S]*?overflow-x:\s*visible;/,
+  );
+});
+
 test('signature move is a full-scale care label, not tiny fixed chrome', () => {
   assert.match(world, /className=["']ql-care-label/);
   assert.match(world, /className=["']ql-care-field/);

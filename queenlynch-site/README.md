@@ -100,7 +100,7 @@ queenlynch-site/
 
 ### Editorial Scroll Homepage
 
-The homepage uses a Scrollcraft **editorial-journey** grammar inspired by the Wilk & Wilk reference site while retaining Queen Lynch's own identity and photography. The sequence moves through a sticky photographic hero, editorial trust split, pinned horizontal service rail, progressive prescription-style care label, specialized-care split, floating story collage, and circular visit reveal.
+The homepage uses a Scrollcraft **editorial-journey** grammar inspired by the Wilk & Wilk reference site while retaining Queen Lynch's own identity and photography. The sequence moves through a sticky photographic hero, editorial trust split, vertically driven horizontal service rail on mobile and desktop, progressive prescription-style care label, specialized-care split, floating story collage, and circular visit reveal.
 
 The care label is the signature move: its progress rule and ailment rows resolve as the visitor moves through the section. Motion never carries essential meaning; reduced-motion users receive the complete static composition.
 

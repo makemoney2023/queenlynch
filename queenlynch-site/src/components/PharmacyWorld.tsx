@@ -183,7 +183,7 @@ export function PharmacyWorld() {
         );
       });
 
-      media.add('(min-width: 801px) and (prefers-reduced-motion: no-preference)', () => {
+      media.add('(prefers-reduced-motion: no-preference)', () => {
         const rail = document.querySelector<HTMLElement>('.ql-care-rail');
         const section = document.querySelector<HTMLElement>('.ql-services');
 

@@ -940,20 +940,19 @@
   }
 
   .ql-services {
-    min-height: auto;
+    min-height: 100svh;
   }
 
   .ql-care-rail {
-    width: auto;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 1rem;
+    width: max-content;
+    overflow-x: visible;
+    scroll-snap-type: none;
+    padding-bottom: 0;
   }
 
   .ql-care-card {
     width: 84vw;
     height: 62svh;
-    scroll-snap-align: start;
   }
 
   .ql-label-section {

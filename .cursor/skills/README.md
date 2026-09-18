@@ -1,6 +1,6 @@
 # Queen Lynch Pharmacy — project skills
 
-Copied from the Wilk & Wilk / Strong Foam rebuild toolkit (`Desktop/Projects/wilkandwilk/.cursor/skills`).
+Project skills plus a full copy of `Desktop/ClaudeSkills/skills` under `claude-skills/` (community, org, integrations, plugins, user). The live homepage uses `scroll-craft` worldflight.
 
 | Skill | Role |
 |-------|------|

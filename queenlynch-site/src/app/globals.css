@@ -16,19 +16,24 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  html:not([data-world="on"]) h1,
+  html:not([data-world="on"]) h2,
+  html:not([data-world="on"]) h3,
+  html:not([data-world="on"]) h4,
+  html:not([data-world="on"]) h5,
+  html:not([data-world="on"]) h6 {
     @apply font-semibold;
   }
 
-  h1 {
+  html:not([data-world="on"]) h1 {
     @apply text-4xl md:text-5xl lg:text-6xl;
   }
 
-  h2 {
+  html:not([data-world="on"]) h2 {
     @apply text-3xl md:text-4xl lg:text-5xl;
   }
 
-  h3 {
+  html:not([data-world="on"]) h3 {
     @apply text-2xl md:text-3xl;
   }
 }
@@ -44,9 +49,9 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
+  html:not([data-world="on"]) *,
+  html:not([data-world="on"]) *::before,
+  html:not([data-world="on"]) *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;

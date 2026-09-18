@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { getPublishedPosts } from '@/lib/blog-data';
-import { NAP_DATA, SITE_URL } from '@/lib/constants';
+import { SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Blog Posts',

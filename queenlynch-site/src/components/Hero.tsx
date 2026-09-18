@@ -79,7 +79,7 @@ export function Hero() {
             Committed to Your Care
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-100">
-            Experiencing a common health issue? Get convenient care for many minor ailments without needing a doctor's appointment.
+            Experiencing a common health issue? Get convenient care for many minor ailments without needing a doctor&apos;s appointment.
           </p>
           <p className="text-lg mb-6">
             Visit QLP today! Our highly trained Pharmacists are ready to help with the conditions listed below.

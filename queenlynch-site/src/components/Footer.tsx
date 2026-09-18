@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { NAP_DATA } from '@/lib/constants';
 
 export function Footer() {

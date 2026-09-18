@@ -1,7 +1,20 @@
 import type { Metadata } from 'next';
+import { Outfit, Source_Sans_3 } from 'next/font/google';
 import { NAP_DATA, SITE_URL, SITE_DESCRIPTION } from '@/lib/constants';
 import { getHomePageGraph } from '@/lib/site-schema';
 import './globals.css';
+
+const outfit = Outfit({
+  subsets: ['latin'],
+  variable: '--font-display',
+  display: 'swap',
+});
+
+const sourceSans = Source_Sans_3({
+  subsets: ['latin'],
+  variable: '--font-text',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -67,7 +80,7 @@ export default function RootLayout({
   const jsonLd = getHomePageGraph();
 
   return (
-    <html lang="en">
+    <html lang="en" className={`${outfit.variable} ${sourceSans.variable}`}>
       <head>
         <script
           type="application/ld+json"

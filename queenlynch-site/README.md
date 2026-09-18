@@ -1,6 +1,6 @@
 # Queen Lynch Pharmacy - Next.js Website
 
-A modern, accessible pharmacy website built with Next.js 16, React 19, Tailwind 4, and GSAP ScrollTrigger.
+A modern, accessible pharmacy website built with Next.js 16, React 19, Tailwind 4, and a Scrollcraft-directed editorial journey.
 
 ## 🏥 About
 
@@ -14,7 +14,10 @@ Queen Lynch Pharmacy is a local pharmacy in Brampton, Ontario, providing prescri
 ## ✨ Features
 
 - **Next.js 16 App Router** with React 19 and TypeScript
-- **GSAP ScrollTrigger** for smooth scroll-driven animations with parallax effects
+- **Scrollcraft editorial journey** with varied pinned, horizontal, sticky, collage, and image-reveal scenes
+- **GSAP + ScrollTrigger** motion scoped through `useGSAP`
+- **Progressive care label** presenting all 13 pharmacist-prescribed minor ailments
+- **Shadcn-style UI primitives** for consistent, accessible actions
 - **Tailwind CSS 4** for modern, responsive styling
 - **Accessibility-first** with prefers-reduced-motion support
 - **SEO Optimized** with:
@@ -73,11 +76,15 @@ queenlynch-site/
 │   │   ├── robots.ts           # robots.txt with AI crawler rules
 │   │   └── sitemap.ts          # Dynamic sitemap
 │   ├── components/
-│   │   ├── Header.tsx          # Site header with navigation
-│   │   ├── Footer.tsx          # Site footer
-│   │   ├── Hero.tsx            # Hero with GSAP scroll effects
-│   │   ├── Services.tsx        # Service sections
-│   │   └── Contact.tsx         # Location and contact form
+│   │   ├── PharmacyWorld.tsx   # Editorial scroll homepage
+│   │   ├── PharmacyWorld.css   # Scoped visual system and responsive scenes
+│   │   ├── PharmacyWorld.test.mjs # Structural regression tests
+│   │   ├── ui/button.tsx       # Shadcn-style button primitive
+│   │   ├── Header.tsx          # Blog chrome
+│   │   ├── Footer.tsx          # Blog chrome
+│   │   ├── Hero.tsx            # Legacy stacked sections
+│   │   ├── Services.tsx        # Legacy stacked sections
+│   │   └── Contact.tsx         # Legacy stacked sections
 │   └── lib/
 │       ├── types.ts            # TypeScript types
 │       ├── constants.ts        # NAP data, services, ailments
@@ -91,13 +98,11 @@ queenlynch-site/
 
 ## 🎨 Key Features
 
-### Scroll-World Homepage
+### Editorial Scroll Homepage
 
-The homepage features a photographic scroll-driven experience powered by GSAP ScrollTrigger:
-- Parallax hero image
-- Smooth reveal animations
-- Scroll-triggered section appearances
-- Respects `prefers-reduced-motion` for accessibility
+The homepage uses a Scrollcraft **editorial-journey** grammar inspired by the Wilk & Wilk reference site while retaining Queen Lynch's own identity and photography. The sequence moves through a sticky photographic hero, editorial trust split, pinned horizontal service rail, progressive prescription-style care label, specialized-care split, floating story collage, and circular visit reveal.
+
+The care label is the signature move: its progress rule and ailment rows resolve as the visitor moves through the section. Motion never carries essential meaning; reduced-motion users receive the complete static composition.
 
 ### SEO & Schema
 
@@ -130,6 +135,7 @@ Pharmacy can prescribe for 13 minor ailments including:
 - `npm run dev` - Start development server
 - `npm run build` - Build for production (includes media sync)
 - `npm start` - Start production server
+- `npm test` - Homepage structure, motion, navigation, and accessibility regression tests
 - `npm run lint` - Run ESLint
 - `npm run media-sync` - Sync assets from ../assets to public/media
 
@@ -186,4 +192,4 @@ For technical support or questions about the website:
 
 ---
 
-Built with ❤️ using Next.js 16, React 19, Tailwind 4, and GSAP
+Built with Next.js 16, React 19, Tailwind 4, and Scrollcraft

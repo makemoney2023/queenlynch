@@ -1,0 +1,38 @@
+{
+  "site": "https://www.queenlynch.com",
+  "scraped_at": "2026-09-18T09:40:48-0400",
+  "pages_md": 15,
+  "raw_html": 15,
+  "images": 43,
+  "counts": {
+    "brand": 21,
+    "staff": 1,
+    "interiors": 3,
+    "exteriors": 0,
+    "heroes": 1,
+    "other": 17
+  },
+  "pages_200": 12,
+  "pages_non_200": 3,
+  "phones": [
+    "(905) 450-3500",
+    "(905) 494-5888"
+  ],
+  "email": "queenlynchpharmacy@gmail.com",
+  "address": "157 Queen St E, Brampton, ON L6W 3X4",
+  "hours": "Mon-Fri 9am-6pm; Sat 9am-12pm; Sun Closed",
+  "owner": "Carolyn Khan",
+  "blockers": [
+    "/blog/mfx1yhx_6 \u2192 HTTP 404 (Summer Headaches \u2014 top banner)",
+    "/blog/jsal-6iby0c2 \u2192 HTTP 404 (Why You Feel Tired\u2026)",
+    "/blog/4iw0q6ad21w \u2192 HTTP 404 (Spring Anxiety & Sleep Disruption)",
+    "sitemap.xml 404 (use sitemap-index.xml \u2192 sitemap-0.xml)",
+    "HTML canonical points to https://localhost/ (misconfig)",
+    "No social links found",
+    "No exterior storefront photos found",
+    "Hero/header/form content is client-only React \u2014 salvaged from JS bundles",
+    "CMS: microCMS for blog images; one microCMS asset URL 404",
+    "mailto: hrefs sometimes include trailing space"
+  ],
+  "tech": "Astro 5.18 + React islands; microCMS blog; AES Studio Plausible analytics"
+}
